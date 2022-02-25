@@ -66,3 +66,4 @@ Route::get('/admin_signout',[AdminClientController::class,'admin_signout']);
 Route::post('/admin_insert_products',[AdminClientController::class,'admin_insert_products']);
 Route::get('/admin_insert_products',[AdminClientController::class,'admin_insert_products_get']);
 Route::post('/admin_product_upload',[AdminClientController::class,'admin_product_upload']);
+/* My name is safeer ahmed farooqi */
