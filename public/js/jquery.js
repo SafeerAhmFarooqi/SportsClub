@@ -1,0 +1,62 @@
+$(document).ready(function()
+{
+  $("#show_curr_pass_btn").click(function()
+  {
+    if($("#input_current_pass").attr("type")==="password")
+    {
+      $("#input_current_pass").attr("type","text");
+    }
+    else
+    {
+      $("#input_current_pass").attr("type","password");
+    }
+  }
+  );  
+  $("#show_new_pass_btn").click(function()
+  {
+    if($("#input_new_pass").attr("type")==="password")
+    {
+      $("#input_new_pass").attr("type","text");
+    }
+    else
+    {
+      $("#input_new_pass").attr("type","password");
+    }
+  }
+  );
+  $("#show_confirm_pass_btn").click(function()
+  {
+    if($("#input_confirm_pass").attr("type")==="password")
+    {
+      $("#input_confirm_pass").attr("type","text");
+    }
+    else
+    {
+      $("#input_confirm_pass").attr("type","password");
+    }
+  }
+  );
+  $("#signup_btn").hide();
+    $("#check_id").change(function()
+    {
+      if(this.checked)
+      {
+        $("#signup_btn").show();
+      }
+      if(!this.checked)
+      {
+        $("#signup_btn").hide();
+      }
+    }
+    );
+    $("#signup_btn").click(function()
+    {
+        if($("#state_id").val()=="Choose...")
+        {
+            $("#state_id").val("");
+        }
+    }
+    );
+    
+}
+);
